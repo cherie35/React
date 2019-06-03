@@ -1,3 +1,4 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 
 .Navbar{
   position: fixed;
@@ -37,17 +38,27 @@
   justify-content: space-evenly;
 }
 
+.MePage{
+  height: 100vh;
+  background-color:  #ffffff;
+}
+.headshot{
+  width: 33em;
+}
+
 .buttonMain{
   background-color: #43C6AC;
   border: 0px;
-  margin-right: 4em;
+  margin-inline-end: 2em;
+  font-size: 18pt;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
 }
 .buttonSub{
-  size: 200px;
   background-color: #FFFF;
   color: #43C6AC;
+  font-size: 18pt;
   border-width: 0px;
+  margin-inline-end: 2em;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
 }
 
@@ -69,18 +80,25 @@
 .h1{
   margin-bottom: 0%
 }
-.mainPageText{
+.mainPageText {
   margin-bottom: 5em
-}
-.mainButtons{
-  text-align: center;
-  position: relative;
-  display: flex;
-  justify-content: center
 }
 .linksMain,.linksMain>div>a{
   text-align: center;
   position: relative;
-  display: flex;
   justify-content: center
+}
+.mainPageText>p{
+  text-align: center;
+  justify-content: center;
+}
+
+.mainButtons{
+  
+  justify-content: space-between;
+}
+
+.abt{
+  justify-content: center;
+  text-align: center;
 }
