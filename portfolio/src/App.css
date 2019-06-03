@@ -30,7 +30,7 @@
   background-color:  #e27D60;
 }
 
-.logosMain{
+.logosMain,.logosMain>a{
   width: 2rem;
   color: grey;
   opacity: .8;
@@ -73,6 +73,12 @@
   margin-bottom: 5em
 }
 .mainButtons{
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center
+}
+.linksMain,.linksMain>div>a{
   text-align: center;
   position: relative;
   display: flex;

@@ -13,11 +13,13 @@ function Main() {
     <div className="mainPage" style={{width: '100%', margin: 'auto'}} >
 
       <Grid className="inner">
-        <Cell col={12}>
-          <div className="mainPageText">
-        <h1>I'm Chérie Cederboom</h1>
-      <p>2nd year Computer Science student</p>
+
+      <Cell col={12}>
+        <div className="mainPageText">
+          <h1>Hello, I'm Chérie Cederboom</h1>
+          <p>Computer Science student</p>
         </div>
+
       <Cell col={12} className="mainButtons">
       <Link
 				activeClass="active"
@@ -26,14 +28,23 @@ function Main() {
 				smooth={true}
 				duration= {500}
 			>
-      <Button className={"buttonMain"} >See Past Work</Button>  
+      <Button className={"buttonMain"} >
+        See Past Work
+        </Button>  
       </Link>
-      <Button className={"buttonSub"} href="mailto:cherie-@hotmail.nl">Get In Touch</Button>
+      <Button className={"buttonSub"} href="mailto:cherie-@hotmail.nl">
+        Get In Touch
+        </Button>
       </Cell>
+
+
+      <Cell col={12} className="linksMain">
       <div  className="logosMain" >
-        <Github/> 
-        <Insta /> 
-        <LinkedIn/></div>
+        <a href="https://github.com/cherie35"><Github/></a>
+        <a href="https://www.instagram.com/bvsicvlly.che/"><Insta /> </a>
+        <a href="https://nl.linkedin.com/in/ch%C3%A9rie-cederboom"><LinkedIn/></a>
+      </div>
+      </Cell>
       </Cell>
       </Grid>
     </div>
