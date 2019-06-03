@@ -12,7 +12,7 @@
 
 .mainPage{
   height: 100vh;
-  background-color:  #BFBFBF;
+  background-color:  #ffffff;
 }
 
 .projectsPage{
@@ -22,12 +22,12 @@
 
 .aboutPage{
   height: 100vh;
-  background-color:  #FFFF;
+  background-color:  #7dc2af;
 }
 
 .interestsPage{
   height: 100vh;
-  background-color:  #BFBFBF;
+  background-color:  #e27D60;
 }
 
 .logosMain{
@@ -40,6 +40,7 @@
 .buttonMain{
   background-color: #43C6AC;
   border: 0px;
+  margin-right: 4em;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
 }
 .buttonSub{
@@ -49,7 +50,31 @@
   border-width: 0px;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
 }
+
+.Button{
+  outline: none;
+  outline-width: 0px;
+  outline-color: transparent;
+  border-width: 0px;
+}
+
 .inner{
-  position: absolute;
-  z-index: 9999;
+  text-align: center;
+  position: relative;
+  top: 30vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.h1{
+  margin-bottom: 0%
+}
+.mainPageText{
+  margin-bottom: 5em
+}
+.mainButtons{
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center
 }
