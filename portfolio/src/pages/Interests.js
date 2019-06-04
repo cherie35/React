@@ -4,7 +4,9 @@ function Interests() {
     return (
   
       <div className="interestsPage">
-  
+        <h1 className='PageDesc'>idk</h1>
+
+
       </div>
     );
   }
