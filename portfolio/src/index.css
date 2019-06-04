@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
+  
+  max-width: 100%;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -13,4 +14,7 @@ code {
 }
 h1{
   margin: 0pt;
+}
+html{
+  max-width: 100%;
 }

@@ -1,6 +1,18 @@
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Muli|Oxygen|Roboto|Rubik&display=swap');
 
+
+/* Globals */
+.btn-primary{
+  font-family: 'Montserrat';  
+  padding: 9px;
+}
+.cont{
+  max-height: 100vh;
+}
+.PageDesc{
+  margin: 0pt;
+}
 .Navbar{
   position: fixed;
   top: 0;
@@ -11,28 +23,65 @@
   padding-right: 20px;
   display: inline;
 }
-
-
+.Button{
+  outline: none;
+  outline-width: 0px;
+  outline-color: transparent;
+  border-width: 0px;
+}
+.cardImg{
+  width: '30px';
+}
+/* -------Pages------- */
 .mainPage{
   height: 100vh;
   background-color:  #ffffff;
-}
+  font-family: 'Montserrat';  
 
+}
 .projectsPage{
   height: 100vh;
   background-color:  #F5D76E;
+  font-family: 'Montserrat';  
 }
 
 .aboutPage{
   height: 100vh;
   background-color:  #7dc2af;
+  font-family: 'Montserrat';
 }
 
 .interestsPage{
   height: 100vh;
   background-color:  #e27D60;
+  font-family: 'Montserrat';
 }
 
+.MePage{
+  height: 100vh;
+  background-color:  #ffffff;
+  font-family: 'Montserrat';
+}
+
+
+/* ------Main------- */
+.mainPageText {
+  margin-bottom: 5em
+}
+.linksMain,.linksMain>div>a{
+  text-align: center;
+  position: relative;
+  justify-content: center
+}
+.mainPageText>p{
+  text-align: center;
+  font-family: 'Montserrat';  
+  justify-content: center;
+  margin-right: 2.5em;
+}
+.mainButtons{
+  justify-content: space-between;
+}
 .logosMain{
   width: 2rem;
   color: grey;
@@ -41,22 +90,19 @@
   opacity: .8;
   justify-content: space-evenly;
 }
-
 .logos{
   color: grey;
   opacity: .8;
   width: 1.5rem;
   margin-right: 2em;
 }
-
-.MePage{
+.inner{
+  text-align: center;
+  position: relative;
+  top: 30vh;
+  left: 0;
   height: 100vh;
-  background-color:  #ffffff;
 }
-.headshot{
-  width: 33em;
-}
-
 .buttonMain{
   background-color: #43C6AC;
   border: 0px;
@@ -72,57 +118,18 @@
   margin-inline-end: 2em;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
 }
-
-.Button{
-  outline: none;
-  outline-width: 0px;
-  outline-color: transparent;
-  border-width: 0px;
-}
-
-.inner{
-  text-align: center;
-  position: relative;
-  top: 30vh;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-}
 .mainPageText>h1{
   font-family: 'Montserrat';  
   margin-bottom: 0%
 }
-.btn-primary{
-  font-family: 'Montserrat';  
 
-  padding: 9px;
-}
+/* Projects */
 
-.PageDesc{
-  margin: 0pt;
-}
 
-.mainPageText {
-  margin-bottom: 5em
+/* About */
+.headshot{
+  width: 33em;
 }
-.linksMain,.linksMain>div>a{
-  text-align: center;
-  position: relative;
-  justify-content: center
-}
-.mainPageText>p{
-  text-align: center;
-  font-family: 'Montserrat';  
-  justify-content: center;
-  margin-right: 2.5em;
-
-}
-
-.mainButtons{
-  
-  justify-content: space-between;
-}
-
 .abt{
   justify-content: center;
   text-align: center;
