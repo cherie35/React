@@ -3,57 +3,24 @@ import {Grid, Cell} from 'react-mdl';
 import Placeholder from '../assets/images/placeholder-image.png';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function Projects() {
     return (
   
-      <div className="projectsPage">
-
-      <Grid className='cont'>
-      <Cell col={12}>
-      <h1 className='PageDesc'>projects</h1>
-
-      </Cell>
-      <Cell col={6} className="halfRight"></Cell>
-      <Cell col={6} className='colLeft'></Cell>
-      <Cell col={4}>
-        <Card >
-          <Card.Img src={Placeholder}/>
-          <Card.Body>
-            <Card.Title>Title</Card.Title>
-          </Card.Body>
-          <Card.Body>
-          </Card.Body>
-        </Card>
-        </Cell>
-        <Cell col={4}>
-        <Card >
-          <Card.Img src={Placeholder}/>
-          <Card.Body>
-            <Card.Title>Title</Card.Title>
-          </Card.Body>
-          <Card.Body>
-          </Card.Body>
-        </Card>
-        </Cell>
-        <Cell col={4}>
-        <Card>
-          <Card.Img src={Placeholder}/>
-          <Card.Body>
-            <Card.Title>Title</Card.Title>
-
-          </Card.Body>
-          <Card.Body>
-
-          </Card.Body>
-        </Card>
-      </Cell>
-      </Grid>
-
       
-
-      </div>
+<div className="projectsPage">
+  <Container fluid={true} className='projectsPage'>
+    <Col sm={2}>
+      <Row className='flex'>
+        <h1 className='projects-title'>Here are some of the 
+          <span style={{color: '#6EAF9C'}}> things</span> I worked on.
+        </h1>
+      </Row>
+    </Col>
+  </Container>
+</div>
     );
   }
   

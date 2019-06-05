@@ -8,29 +8,17 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import './App.css';
 
 
-const navstyle ={
-  position: 'fixed',
-  top: 0,
-  textAlign: 'right',
-  listStyle: 'none',
-  backgroundColor: 'transparent',
-  fontSize: "2em",
-  paddingRight: "20px",
-  display: 'inline'
-}
-
 function App() {
   
   return (
-    <div classname="App">
-    <Main/>
-    <Projects/>
-    <About/>
-    <Interests/>
-    <Me/>
     
-    
-    </div>
+<div classname="App">
+  <Main/>
+  <Projects/>
+  <About/>
+  <Interests/>
+  <Me/>
+</div>
   );
 }
 
