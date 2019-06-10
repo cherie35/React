@@ -4,9 +4,11 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Particles from 'react-particles-js';
 import {Link} from "react-scroll";
-import {Grid, Cell} from 'react-mdl';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import TypeOut from 'react-typeout';
+
+const descr=['Computer Science Student.', 'Aspiring Front-End Developer.', 'Nerd.','Meme Appreciator.','Aspiring UI/UX Designer.', 'Woman of Many Talents.','(con)Artist.','PC Enthusiast.'];
 
 function Main() {
   return (
@@ -18,23 +20,23 @@ function Main() {
     <Row >
       <Col lg={12} className="mainPageText align-middle">
         <h1 className={'mainPageTitle'}>Hello, I'm Chérie Cederboom</h1>
-        <p className={'mainPageSubTitle'}>Computer Science student &nbsp; | &nbsp; Aspiring Front-end developer</p>
+        <p className={'mainPageSubTitle '}>
+          <TypeOut words={descr} caret={true} typeSpeed={70} pauseSpeed={1500} rewindSpeed={30}/>
+        </p>
       </Col>
     </Row>
     <Row >
       <Col md={12} className="offset-md-auto mainButtons">
         <div className='btn-toolbar-center'>
-          <div className='btn-group mx-5'>
-            <Link activeClass="active" to="projectsPage" spy={true} smooth={true} duration= {500}>
-              <Button className={"buttonMain"} >
-                  See Past Work
+          <div className='btn-group pt-4 mx-5'>
+            <Link activeClass="active" to="projectsPage" spy={true} smooth={true} duration= {1200}>
+              <Button className={"buttonMain px-4 py-2"} >
+                  see past work
               </Button>
             </Link>
           </div>
-          <div className='btn-group mx-5'>
-            <Button className={"buttonSub"} href="mailto:cherie-@hotmail.nl">
-              <Message style={{width:'1.5rem', marginRight:'10px', paddingBottom: '5px'}}/>Get In Touch
-
+          <div className='btn-group pt-4 mx-5'>
+            <Button title={"I look forward to hearing from you!"} className={"buttonSub px-4 py-2"} href="mailto:cherie-@hotmail.nl">              <Message style={{width:'1.5rem', marginRight:'10px', paddingBottom: '5px'}}/>get in touch
             </Button>
           </div>
         </div>
@@ -43,7 +45,7 @@ function Main() {
   </Container>
   <Row fluid={true}>
     <Col lg={12} className='aboutlink align-bottom'>
-      <Link activeClass="active" to="MePage" spy={true} smooth={true} duration= {2000}>
+      <Link activeClass="active" to="MePage" spy={true} smooth='easeInOutQuint' duration={2000}>
         <a href='#' style={{color: '#6EAF9C'}}>get to know more about me</a>
       </Link>
     </Col>

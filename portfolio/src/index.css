@@ -18,3 +18,4 @@ h1{
 html{
   max-width: 100%;
 }
+::-webkit-scrollbar { width: 0 !important }
