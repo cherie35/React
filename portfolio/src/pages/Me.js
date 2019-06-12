@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from '../assets/images/head_teal_col.png';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import { Col, Container, Row} from 'react-bootstrap';
 import { ReactComponent as Insta} from "../assets/images/instagram.svg";
 import { ReactComponent as LinkedIn} from "../assets/images/linkedin.svg";
 import { ReactComponent as Github} from "../assets/images/github.svg";
@@ -10,9 +9,6 @@ import { ReactComponent as Language} from "../assets/images/language-solid.svg";
 import { ReactComponent as School} from "../assets/images/graduation-cap-solid.svg";
 import { ReactComponent as Fav} from "../assets/images/hand-holding-heart-solid.svg";
 import { ReactComponent as Strenghts} from "../assets/images/cogs-solid.svg";
-import { ReactComponent as CV} from "../assets/images/file-download-solid.svg";
-import Container from 'react-bootstrap/Container';
-import Pdf from '../assets/documents/CV 2018.pdf';
 import Fade from 'react-reveal/Fade';
 
 
@@ -29,11 +25,11 @@ class Me extends React.Component{
     return (
     
 
-<Col xs={12}  fluid={true}  className="MePage" >
+<div xs={12}  fluid={true}  className="MePage" >
   
-  <Container fluid={true} className={"innerAbout m-0  py-5"}>
-      <Row style={{marginTop:'auto', marginBottom:'auto'}}> 
-        <Col xs={12} md={7} className={"innerAboutLeft"}> 
+  <Container fluid={true} className={"innerAbout m-0  pt-5"}>
+      <Row style={{marginTop:'auto', marginBottom:'auto', height: '100vh'}}> 
+        <Col xs={12} md={6} className={"innerAboutLeft"}> 
       <Col>
         <img className='headshot pt-3 pb-0' src={Head}></img>
       </Col>
@@ -45,14 +41,9 @@ class Me extends React.Component{
         </Fade>
         <Fade bottom delay={800} >
         <p className='aboutSub '>
-            Mijn naam is Chérie Cederboom. Ik ben 19 jaar en studeer informatica aan de Hogeschool Rotterdam. 
-          <br/>
-            Hieraan voorafgaand zat ik op het Libanon lyceum in Rotterdam-Kralingen, waar ik mijn Havo diploma heb behaald.
-          <br/>
-            Al van jongs af aan ben ik geïnteresseerd in kunst, science, technologie en techniek. 
-          
-            Ik streef er naar om elke kans waarmee ik
-            mijn kennis kan verbreden aan te grijpen.
+            I'm Chérie Cederboom, a 19 year old Computer science student at the Rotterdam University of Applied Sciences.
+            For as long as I can remember, I have always had an interest in art and tech. 
+            About 2 years ago I got introduced to the world of programming.<br/> It comes as no surprise that I ended up combining these subjects by starting my adventure as front-end developer.
         </p>
         </Fade>
         
@@ -77,7 +68,7 @@ class Me extends React.Component{
 
       <Col xs={12} md={5} className={"innerAboutRight pb-5"}>
         <Col className={'insider py-5 '}>
-        <Fade right cascade duration={2000} delay={1800}>
+        <Fade right cascade duration={2000} delay={1000}>
         <Col md={12} className={'crowBar'}>
           <Code className={'crowIcon'}/>
         <p className={'crows'}>C# · Python · Java  · CSS · HTML · SQL · JS </p>
@@ -101,10 +92,10 @@ class Me extends React.Component{
         </Col></Fade>
         </Col>   
         </Col>
-    </Row>
+    </Row>    
   </Container>
   
-</Col>
+</div>
     );
   }
 }

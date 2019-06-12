@@ -1,4 +1,3 @@
-@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Muli|Oxygen|Roboto|Rubik&display=swap');
 
@@ -53,25 +52,6 @@
   100% { opacity:1; }
 }
 
-.cont {
-  max-height: 100vh;
-}
-
-.PageDesc {
-  margin: 0pt;
-}
-
-.Navbar {
-  position: fixed;
-  top: 0;
-  text-align: right;
-  list-style: none;
-  background-color: transparent;
-  font-size: 2em;
-  padding-right: 20px;
-  display: inline;
-}
-
 .Button {
   outline: none;
   outline-width: 0px;
@@ -81,8 +61,6 @@
 
 /* -------Pages------- */
 .mainPage {
-  height: 100vh;
-  min-height: 600px;
   background-color: #FFFF;
   font-family: 'Montserrat';
   border-color: #F5D76E;
@@ -90,44 +68,10 @@
 }
 
 .projectsPage {
-  height: 100vh;
   min-height: 600px;
-  overflow-y: auto;
-  max-height: 100vh;
   background-color: #FFFF;
   font-family: 'Montserrat';
 }
-
-.p2Page {
-  height: 100vh;
-  min-height: 600px;
-  overflow-y: auto;
-  background-color: white;
-  font-family: 'Montserrat';
-}
-.p3Page {
-  height: 100vh;
-  min-height: 600px;
-  overflow-y: auto;
-  background-color: white;
-  font-family: 'Montserrat';
-}
-.p4Page {
-  height: 100vh;
-  min-height: 600px;
-  overflow-y: auto;
-  background-color: white;
-  font-family: 'Montserrat';
-}
-
-.interestsPage {
-  height: 100vh;
-  overflow-y: auto;
-  min-height: 600px;
-  background-color: #f2f2f2;
-  font-family: 'Montserrat';
-}
-
 .MePage {
   height: 100vh;
   object-fit: contain;
@@ -183,7 +127,7 @@
 }
 
 .buttonMain {
-  background-color: #6EAF9C;
+  background-color: #8EBBAE;
   border: 0px;
   font-size: calc(12px + .7vw);
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
@@ -191,7 +135,7 @@
 
 .buttonSub {
   background-color: #FFFF;
-  color: #6EAF9C;
+  color: #8EBBAE;
   font-size: calc(12px + .7vw);
   border-width: 0px;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
@@ -200,58 +144,58 @@
 
 .aboutlink{
   text-align: center;
-  font-size: calc(6px + .7vw);
+  font-size: calc(7pt + .3vw);
 }
 
 /* Projects */
 .projectsInner{
   min-height: 600px;
   max-width: 100%;
+  padding: 0px;
 }
 
 .projects-title {
   margin-top: 10vh;
-  font-size: calc( 10px + 3vw);
-  max-width: 85%;
+  font-size: calc( 14px + 2.2vw);
+  color: #5B5B5B;
   font-family: 'Montserrat';
 }
 
-.head1{
+.head{
   max-width: 95%;
+  margin-top: 7%;
+  
 }
 
-.desc1{
-  width: 50vw;
-  max-width: 39vw;
-  background-color: rgb(110, 175, 156);
+.head>h1{
+  color: #333333;
+  font-family: 'Montserrat';
+  font-size: calc( 25pt + 2.2vw);
+}
+
+.desc{
+  text-align: center;
+  background-color: #8EBBAE;
   color: white;
-  border-radius: .0;
-  margin-top: calc( 6vh + 5vw);
+  border-radius: 1EM;
+  margin-top: 8%;
 }
 
-.desc1>p{
-  text-align: right;
+.descInfo{
+  text-align: center;
   display: block;
-  font-size: calc(7px + .5vw);
+  font-size: calc(8pt + .5vw);
 }
 
-.more1{
-  max-width: 39vw;
-  text-align: end;
+
+.more{
+  text-align: left;
   font-size: calc(12px + .5vw);
-  color: #6EAF9C;
+  color: #ffffff;
 }
 
-.more1>a{
-  color: #6EAF9C;
-}
-
-.img-con-1{
-  padding-top: 30vh;
-  object-fit: contain;
-  padding-left: 7vw;
-  width: 50vw;
-  text-align: end;
+.more>a{
+  color: #ffffff;
 }
 
 
@@ -262,57 +206,6 @@
 }
 
 
-
-/*   2   */
-.p2Top{
-  height: 4vh;
-}
-
-.desc2-con{
-  float: right;
-  padding-top: 40vh;
-}
-
-.desc2{
-
-  background-color: rgb(110, 175, 156);
-  color: white;
-  border-radius: .0;
-  padding-right: 8%;
-}
-.desc2>p{
-  display: block;
-  font-size: calc(7px + .5vw);
-}
-
-.more2{
-  max-width: 39vw;
-  text-align: left;
-  font-size: calc(12px + .5vw);
-  color: #6EAF9C;
-}
-
-.more2>a{
-  color: #6EAF9C;
-}
-
-.titleprj2{
-  padding-bottom: 30%;
-  padding-top: 30%;
-  font-family: 'Montserrat';
-  font-size: calc(20px + .5vw);
-}
-
-.titleprj-con-2{
-  float: left;
-  top: 0;
-  bottom: 0;
-}
-
-.img-con-2{
-  width: 80vw;
-}
-
 /* About */
 .innerAbout{
   font-family: 'Montserrat';
@@ -320,8 +213,7 @@
   text-align: center;
   object-position: center;
   padding-top: 6vh;
-  min-height: 95vh;
-  max-height: 100vh;
+  margin-bottom: 0;
 }
 
 .headshot { 
@@ -329,7 +221,7 @@
   left: 1;
   right: 1;
   border-radius: 20%;
-  width: calc(13vh + 3vw);
+  width: calc(16vh + 2vw);
 }
 
 .abt{
@@ -346,12 +238,12 @@
 }
 
 .aboutHead{
-  font-size: calc( 10px + 3vw);
+  font-size: calc( 33pt + 1.3vw);
   font-family: 'Montserrat';
 }
 .aboutSub{
   width: 50%;
-  font-size: calc(6px + .4vw);
+  font-size: calc(8pt + .4vw);
   font-family: 'Montserrat';
   text-align: left;
   margin-left: auto;
@@ -394,84 +286,46 @@
 .innerAboutLeft{
  width: 40%;
  top: 0;
+ padding-top: 7%;
  bottom: 0;
- padding-top: calc(4vh + 3vw);
 }
 
 .innerAboutRight{
   margin-top: auto;
   margin-bottom: auto;
   bottom: 0;
-  padding-top: 4vw;
+  padding-top: 0%;
   object-position: center;
   
 }
 
 .insider{
-  background-color: #7dc2af;
+  background-color: #8EBBAE;
   font-family: 'Montserrat';
   justify-content: center;
   text-align: center;
   color: white;
   top: 0;
   bottom: 0;
+  border-radius: 1em;
 
-}
-
-/*   3   */
-.p3Top{
-}
-
-.desc3-con{
-  height: 70%
-}
-
-.desc3{
-
-  background-color: rgb(110, 175, 156);
-  color: white;
-  border-radius: .0;
-}
-.desc3>p{
-  display: block;
-  font-size: calc(7px + .5vw);
-}
-
-.more3{
-  max-width: 39vw;
-  font-size: calc(12px + .5vw);
-  color: #6EAF9C;
-}
-
-.more3>a{
-  color: #6EAF9C;
-}
-
-.p3bottom{
- 
-}
-.titleprj3{
-  font-family: 'Montserrat';
-  font-size: calc(20px + .5vw);
-}
-
-.titleprj-con-3{
-  top: 0;
-  bottom: 0;
-}
-
-.img-con-3{
-  width: 80vw;
-}
-
-.img3{
-  float: right;
 }
 
 /*---Footer----*/
 
-.footicon{
-  color: #bdbdbda3;
-  width: 34px;
-  height: 34px;
+
+.Footer{
+  margin-top:10%;
+  height: 13%;
+  display: inline-flex;
+  justify-content: space-evenly;
+  text-align: center;
+  vertical-align: bottom;
+  background-color: #f2f2f2;
+}
+.projects-title>a{
+  color: #5B5B5B;
+}
+.projects-title>a:hover{
+  color: white;
 }

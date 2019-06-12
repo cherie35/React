@@ -1,26 +1,20 @@
 import React from 'react';
-import { ReactComponent as Message} from "../assets/images/message.svg"
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Particles from 'react-particles-js';
+import { Button, Col, Container, Row} from 'react-bootstrap';
 import {Link} from "react-scroll";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import TypeOut from 'react-typeout';
 
-const descr=['Computer Science Student.', 'Aspiring Front-End Developer.', 'Nerd.','Meme Appreciator.','Aspiring UI/UX Designer.', 'Woman of Many Talents.','(con)Artist.','PC Enthusiast.'];
+const descr=['Computer Science Student.', 'Aspiring Front-End Developer.', 'Nerd.','Meme Appreciator.','Aspiring UI Designer.', 'Artist.'];
 
 function Main() {
   return (
 
     
-
 <Container fluid={true} className="mainPage" style={{width: '100%', margin: 'auto'}} >
   <Container fluid={true} style={{minHeight:"95vh"}} >
     <Row >
       <Col lg={12} className="mainPageText align-middle">
         <h1 className={'mainPageTitle'}>Hello, I'm Chérie Cederboom</h1>
-        <p className={'mainPageSubTitle '}>
+        <p  className={'mainPageSubTitle '} style={{marginTop: '2em'}}>
           <TypeOut words={descr} caret={true} typeSpeed={70} pauseSpeed={1500} rewindSpeed={30}/>
         </p>
       </Col>
@@ -35,20 +29,18 @@ function Main() {
               </Button>
             </Link>
           </div>
-          <div className='btn-group pt-4 mx-5'>
-            <Button title={"I look forward to hearing from you!"} className={"buttonSub px-4 py-2"} href="mailto:cherie-@hotmail.nl">              <Message style={{width:'1.5rem', marginRight:'10px', paddingBottom: '5px'}}/>get in touch
+          <div className='btn-group pt-4 mx-5'>      
+          <Link activeClass="active" to="MePage" spy={true} smooth='easeInOutQuint' duration={2000}>
+            <Button title={"I look forward to hearing from you!"} className={"buttonSub px-4 py-2"} > get in touch
             </Button>
+            </Link>
           </div>
         </div>
       </Col>
     </Row>
   </Container>
   <Row fluid={true}>
-    <Col lg={12} className='aboutlink align-bottom'>
-      <Link activeClass="active" to="MePage" spy={true} smooth='easeInOutQuint' duration={2000}>
-        <a href='#' style={{color: '#6EAF9C'}}>get to know more about me</a>
-      </Link>
-    </Col>
+    
   </Row>
 </Container>
   );
