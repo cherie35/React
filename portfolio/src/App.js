@@ -14,8 +14,7 @@ class App extends React.Component{
   }
   render(){  
   return (
-    
-<div classname="App">
+    <div classname="App">
   <Main/>
   <Projects/>
   <Me/>
