@@ -177,7 +177,7 @@
 }
 
 .buttonMain {
-  background-color: #8EBBAE;
+  background-color: rgb(150, 196, 180);
   border: 0px;
   font-size: calc(12px + .7vw);
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
@@ -185,7 +185,7 @@
 
 .buttonSub {
   background-color: #FFFF;
-  color: #8EBBAE;
+  color: rgb(150, 196, 180);
   font-size: calc(12px + .7vw);
   border-width: 0px;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
@@ -268,6 +268,12 @@
 
 .modal-body{
   padding: 10%;
+  text-align: center;
+  justify-content: center;
+}
+.modal-body>p{
+  text-align: left;
+  justify-content: center;
 }
 
 .modalTitle{
@@ -292,6 +298,28 @@
 .bt4{
   color: #C7B69F;
 }
+
+.carousel-inner{
+}
+
+.carousel-control-next, .carousel-control-prev{
+  filter: invert(100%);
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+.iframe-container iframe {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 /********** About **********/
 .innerAbout {
   font-family: 'Montserrat';
@@ -366,7 +394,7 @@
 }
 
 .crows {
-  font-size: calc(6px + .4vw);
+  font-size: calc(7pt + .5vw);
   padding-top: 4px;
 }
 
@@ -386,7 +414,7 @@
 }
 
 .insider {
-  background-color: #8EBBAE;
+  background-color: rgb(165, 204, 190);
   font-family: 'Montserrat';
   justify-content: center;
   text-align: center;

@@ -26,14 +26,14 @@ function Main() {
           <div className='btn-toolbar-center'>
             <div className='btn-group pt-4 mx-5'>
               <Link activeClass="active" to="projectsPage" spy={true} smooth={true} duration= {1200}>
-                <Button className={"buttonMain px-4 py-2"} >
+                <Button variant='secondary' className={"buttonMain px-4 py-2"} >
                   see past work
               </Button>
               </Link>
             </div>
             <div className='btn-group pt-4 mx-5'>
               <Link activeClass="active" to="MePage" spy={true} smooth='easeInOutQuint' duration={2000}>
-                <Button title={"I look forward to hearing from you!"} className={"buttonSub px-4 py-2"} > get in touch
+                <Button variant='secondary' title={"I look forward to hearing from you!"} className={"buttonSub px-4 py-2"} > get in touch
             </Button>
               </Link>
             </div>
