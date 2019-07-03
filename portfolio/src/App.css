@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Muli|Oxygen|Roboto|Rubik&display=swap');
-
+:root{
+  --sizenav: 18px;
+}
 
 /* Globals */
 .btn-primary {
@@ -102,8 +104,48 @@
   border-width: 0px;
 }
 
+.navMenu{
+  right: 4vw;
+  position: fixed;
+  z-index: 2;
+  vertical-align: middle;
+  right: 6vw;
+  top: 50vh;
+  bottom: 50vh;
+}
 
+.navMenu a{
+  right: -2vw;
+  padding: 10px;
+  position: 100% .4em;;
+}
 
+.navMenu a{
+  right: -2vw;
+}
+
+.navMenu a{
+  text-decoration: none;
+  position: relative;
+
+}
+
+.navMenu a:before{
+  content: '';
+  position: absolute;
+  background: #ffffff4f;
+  width: var(--sizenav);
+  height: var(--sizenav);
+  top:13px;
+  border-radius: 50%;
+  border: 3px solid rgba(91, 91, 91, 0.13);
+}
+
+.navMenu a.active::before{
+  background: rgba(142, 187, 174, 0.459);
+  border-color: #8EBBAE;
+  top:13px;
+}
 /**************** Pages *****************/
 .mainPage {
   background-color: #FFFF;
@@ -114,7 +156,7 @@
 
 .projectsPage {
   min-height: 600px;
-  background-color: #FFFF;
+  background-color: rgb(255, 255, 255);
   font-family: 'Montserrat';
 }
 
@@ -124,9 +166,6 @@
   background-color: #ffffff;
   font-family: 'Montserrat';
 }
-
-
-
 
 /************** Main ****************/
 .inner {

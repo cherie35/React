@@ -5,42 +5,29 @@ import {Link} from "react-scroll";
 function Navbar() {
 	return (
 		<div classname="Navbar">
-			<Link
-				activeClass="active"
-				to="mainPage"
-				spy={true}
-				smooth={true}
-				duration= {500}
-			>
-			Main
-			</Link>
-			<Link
-				activeClass="active"
-				to="projectsPage"
-				spy={true}
-				smooth={true}
-				duration= {500}
-			>
-			Projects
-			</Link>
-			<Link
-				activeClass="active"
-				to="aboutPage"
-				spy={true}
-				smooth={true}
-				duration= {500}
-			>
-			About
-			</Link>
-			<Link
-				activeClass="active"
-				to="interestsPage"
-				spy={true}
-				smooth={true}
-				duration= {500}
-			>
-			huh
-			</Link>
+			<nav className="navMenu">
+				<ul>
+					<li>
+						<Link activeClass="active" to="mainPage" spy={true}	smooth={true} duration= {500}				>
+							main
+						</Link>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<Link activeClass="active" to="projectsPage" spy={true}	smooth={true} duration= {500}				>
+							projects
+						</Link>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<Link activeClass="active" to="MePage" spy={true} smooth={true} duration= {500}				>
+						about
+						</Link>
+					</li>
+				</ul>
+			</nav>
 		</div>
 	);
 }

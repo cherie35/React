@@ -69,6 +69,7 @@ class Me extends React.Component{
             <Col md={12} className={'crowBar'}>
               <Code className={'crowIcon'}/>
               <p className={'crows'}>C# · Python · Java  · CSS · HTML · SQL · JS </p>
+              <p className={'crows'}>ASP.NET · ReactJS</p>
             </Col>
             <Col md={12}>
               <Language className={'crowIcon'}/>
