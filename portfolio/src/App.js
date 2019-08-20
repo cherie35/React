@@ -5,6 +5,9 @@ import Main from './pages/Main.js';
 import Projects from './pages/Projects.js';
 import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 import './App.css';
+import Navi from './components/Navi.js';
+import Footer from './components/Footer.js';
+import {} from 'react-router-dom';
 
 class App extends React.Component{
   constructor(props, context) {

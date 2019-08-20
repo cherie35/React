@@ -19,8 +19,10 @@ import sayos6 from '../assets/images/sayos/6.png'
 import sayos7 from '../assets/images/sayos/7.png'
 import sayos8 from '../assets/images/sayos/8.png'
 import sayos9 from '../assets/images/sayos/9.png'
+import { ReactComponent as Arrow} from '../assets/images/arrow.svg'
 
-
+const t1 = '#B6D4CA';
+const t2 = '#ccdbd3';
 
 class Projects extends React.Component{
   constructor(props, context) {
@@ -31,6 +33,8 @@ class Projects extends React.Component{
       p2Show: false,
       p3Show: false,
       p4Show: false,
+      p5Show: false,
+      p6Show: false,
     };
   }
   render(){
@@ -38,7 +42,8 @@ class Projects extends React.Component{
     let p1Close = () => this.setState({ p1Show: false });   
     let p2Close = () => this.setState({ p2Show: false });   
     let p3Close = () => this.setState({ p3Show: false });   
-    let p4Close = () => this.setState({ p4Show: false });   
+    let p4Close = () => this.setState({ p4Show: false });
+    let p5Close = () => this.setState({ p5Show: false });   
         
   return (
   
@@ -56,13 +61,11 @@ class Projects extends React.Component{
           </h1>
         </Fade>
       </Col>
-      <Col xs={12} md={6} className='desc' style={{backgroundColor: '#F0C777', borderTopRightRadius: 0, borderBottomRightRadius: 0, marginTop: '4%'}}>
+      <Col xs={12} md={6} className='desc' style={{backgroundColor: t1, borderTopRightRadius: 0, borderBottomRightRadius: 0}}>
         <Fade right duration={2000}>
           <Col xs={12} className={'py-5'} >
-            <h1 className="projects-title">
-              <a href="javascript:void(0)" onClick={() => this.setState({ p1Show: true })}>
-              SAYOS
-              </a>
+            <h1 className="projects-title pt-5">
+              <a href="javascript:void(0)" onClick={() => this.setState({ p1Show: true })}>SAYOS</a>
             </h1>
             <p className='descInfo'>
             c# · asp.net
@@ -70,14 +73,16 @@ class Projects extends React.Component{
           </Col>
         </Fade>
         <Fade delay={800}>
-          <Col xs={12} className="more py-4">
+          <Col xs={12} className="more pb-4 pt-2 mt-5">
             <a href="javascript:void(0)" onClick={() => this.setState({ p1Show: true })}>More</a>
           </Col>
         </Fade>
       </Col>
     </Row>
+
     <Row>
-      <Col xs={12} md={7} className='desc' style={{backgroundColor: '#D8A0A3', borderTopLeftRadius: 0, borderBottomLeftRadius: 0}}>
+      {/************* SAYOS *************/}  
+      <Col xs={12} md={7} className='desc' style={{backgroundColor: t1, borderTopLeftRadius: 0, borderBottomLeftRadius: 0}}>
         <Fade left duration={2000}>
           <Col xs={12} className={'py-5'} >
             <Fade>
@@ -96,12 +101,15 @@ class Projects extends React.Component{
           </Col>
         </Fade>
       </Col>
-      <Col xs={12} md={4} className='desc offset-md-1' style={{backgroundColor: '#B6D4CA', borderTopRightRadius: 0, borderBottomRightRadius: 0}}>
+      {/************* OLE *************/}  
+      <Col xs={12} md={4} className='desc offset-md-1' style={{backgroundColor: t2, borderTopRightRadius: 0, borderBottomRightRadius: 0}}>
         <Fade right duration={2000}>
           <Col xs={12} className={'py-5'} >
             <Fade>
               <h1 className="projects-title pt-5">
-                <a  href="javascript:void(0)" onClick={() => this.setState({ p3Show: true })}>OLE</a>
+                <a  href="javascript:void(0)" onClick={() => this.setState({ p3Show: true })}>
+                  OLE
+                </a>
               </h1>
               <p className='descInfo'>
             logo · design
@@ -117,17 +125,16 @@ class Projects extends React.Component{
       </Col>
     </Row>
     <Row>
-      <Col xs={12} md={5} className='desc' style={{backgroundColor: '#C7B69F', borderTopLeftRadius: 0, borderBottomLeftRadius: 0}}>
+      {/************* ARCADE SIMULATOR *************/}  
+      <Col xs={12} md={5} className='desc' style={{backgroundColor: t2, borderTopLeftRadius: 0, borderBottomLeftRadius: 0}}>
         <Fade left duration={2000}>
           <Col xs={12} className={'py-5'} >
             <Fade>
-              <h1 className="projects-title">
-                <a  href="javascript:void(0)" onClick={() => this.setState({ p4Show: true })}>ARCADE
-                
-                  
-                  <br/>SIMULATOR
-              
-                
+              <h1 className="projects-title pt-5">
+                <a  href="javascript:void(0)" onClick={() => this.setState({ p4Show: true })}>
+                  ARCADE
+                  <br/>
+                  SIMULATOR
                 </a>
               </h1>
               <p className='descInfo'>
@@ -142,13 +149,17 @@ class Projects extends React.Component{
           </Col>
         </Fade>
       </Col>
-      <Col xs={12} md={6} className='desc offset-md-1' style={{backgroundColor: '#e8a87c', borderTopRightRadius: 0, borderBottomRightRadius: 0}}>
+      
+      {/************* ART *************/}  
+      <Col xs={12} md={6} className='desc offset-md-1' style={{backgroundColor: t1, borderTopRightRadius: 0, borderBottomRightRadius: 0}}>
         <Fade right duration={2000}>
           <Col xs={12} className={'my-5 py-5'} >
-            <Col xs={12} className={'projects-title pt-3 my-5'} >
+            <Col xs={12} className={'pt-3 my-5'} >
               <Fade>
                 <h1 className="projects-title my-0 py-5">
-                  <a href={'https://www.instagram.com/blvnk.sketches/'} target='blank'>CHECK OUT MY ART</a>
+                  <a href={'https://www.instagram.com/blvnk.sketches/'} target='blank' >
+                    CHECK OUT MY ART
+                  </a>
                 </h1>
               </Fade>
             </Col>
@@ -157,45 +168,14 @@ class Projects extends React.Component{
       </Col>
     </Row>
     <Row>
-      <Col xs={12} md={9} className='desc' style={{backgroundColor: '#D7B377', borderTopLeftRadius: 0, borderBottomLeftRadius: 0}}>
-        <Fade left duration={2000}>
-          <Col xs={12} className={'py-5'} >
-            <Fade>
-              <h1 className="projects-title pt-5">
-                <a  >Tom Den Hoed</a>
-              </h1>
-              <p className='descInfo'>
-              comming · soon
-            </p>
-            </Fade>
-          </Col>
-        </Fade>
-        <Fade delay={800}>
-          <Col xs={12} className="more pb-4 pt-2 mt-5" style={{textAlign: 'right'}}>
-            <a  href="javascript:void(0)"  onClick={() => this.setState({ p2Show: true })}></a>
-          </Col>
-        </Fade>
-      </Col>
-      <Col xs={0} md={2} className='desc d-none d-sm-none d-md-block offset-md-1' style={{backgroundColor: '#DAA89B', borderTopRightRadius: 0, borderBottomRightRadius: 0}}>
-        <Fade right duration={2000}>
-          <Col xs={12} className={'my-5 py-5'} >
-            <Col xs={12} className={'projects-title pt-3 my-5'} >
-              <Fade>
-                <h1 className="projects-title my-0 py-5">
-                  <a ></a>
-                </h1>
-              </Fade>
-            </Col>
-          </Col>
-        </Fade>
-      </Col>
-    </Row>
+      </Row>
   </Container>
 
-  {/************************** Project modals **********************/}
-  
+  {/************************************** Project modals **************************************/}
+
+  {/************* SAYOS *************/}  
   <Modal scrollable={true} size="lg" show={this.state.p1Show} onHide={p1Close} centered={true}>
-    <Modal.Header closeButton style={{background: '#F0C777'}}>
+    <Modal.Header closeButton style={{background: t1}}>
       <Modal.Title id="modalP1">
         <Col xs={12} >
           <h1 className="modalTitle">Sayos</h1>
@@ -245,11 +225,13 @@ class Projects extends React.Component{
       </div>
     </Modal.Body>
     <Modal.Footer>
-      <Button href={"https://github.com/joelscholtz/Bytme"} target="blank" className="modalBtn bt4">GITHUB</Button>
+      <Button href={"https://github.com/joelscholtz/Bytme"} target="blank" className="modalBtn bt1">GITHUB</Button>
     </Modal.Footer>
   </Modal>
+
+  {/************* OHR *************/}  
   <Modal scrollable={true} size="lg" show={this.state.p2Show} onHide={p2Close} centered={true}>
-    <Modal.Header closeButton style={{background: '#D8A0A3'}}>
+    <Modal.Header closeButton style={{background: t1}}>
       <Modal.Title id="modalP2">
         <h1 className="modalTitle">OHR</h1>
       </Modal.Title>
@@ -261,11 +243,13 @@ class Projects extends React.Component{
       </Col>
     </Modal.Body>
     <Modal.Footer>
-      <Button href={'https://github.com/cherie35/J1P4'} target="blank" variant="secondary" className="modalBtn bt2">GITHUB</Button>
+      <Button href={'https://github.com/cherie35/J1P4'} target="blank" variant="secondary" className="modalBtn bt1">GITHUB</Button>
     </Modal.Footer>
   </Modal>
+
+  {/************* OLE *************/}  
   <Modal scrollable={true} size="lg" show={this.state.p3Show} onHide={p3Close} centered={true}>
-    <Modal.Header closeButton style={{background: '#B6D4CA'}}>
+    <Modal.Header closeButton style={{background: t2}}>
       <Modal.Title id="modalP3">
         <h1 className="modalTitle">OLE</h1>
       </Modal.Title>
@@ -308,29 +292,83 @@ class Projects extends React.Component{
       </Col>
     </Modal.Body>
     <Modal.Footer>
-      <Button href={'https://www.openrotterdam.nl/quintis-helpt-jongeren-naar-toekomst-waarin-zij-inspireren/nieuws/item?997358'} target="blank" variant="secondary" className="modalBtn bt3">READ ARTICLE</Button>
+      <Button href={'https://www.openrotterdam.nl/quintis-helpt-jongeren-naar-toekomst-waarin-zij-inspireren/nieuws/item?997358'} target="blank" variant="secondary" className="modalBtn bt2">READ ARTICLE</Button>
     </Modal.Footer>
   </Modal>
+  
+  {/************* ARCADE SIMULATOR *************/}  
   <Modal scrollable={true} size="lg" show={this.state.p4Show} onHide={p4Close} centered={true}>
-    <Modal.Header closeButton style={{background: '#C7B69F'}}>
+    <Modal.Header closeButton style={{background: t2}}>
       <Modal.Title id="modalP4">
         <h1 className="modalTitle">Arcade Simulator</h1>
       </Modal.Title>
     </Modal.Header>
     <Modal.Body>
-      <p>Arcade Simulator is a pc game that consists of 4 mini games: Dodge the Fangirls, Dron, Galaxy Trespassers (my first ever programming project), and Race. It's a pygame writen in entirely in Python using the Pygame library.
+      <p>Arcade Simulator is a pc game that consists of 4 mini games: Dodge the Fangirls, Dron, Galaxy Trespassers (my first ever programming project), and Race. It's a pygame written in entirely in Python using the Pygame library.
     </p>
       <Col className="iframe-container" md={12}>
         <iframe src="https://www.youtube.com/embed/gi3nWmsufi4" allowfullscreen/>
       </Col>
     </Modal.Body>
     <Modal.Footer>
-      <Button href={'https://github.com/KaasKop97/Project-2-Game'} target="blank" variant="secondary" title='view on github' className="modalBtn bt3">FULL GAME</Button>
-      <Button href={'https://github.com/KaasKop97/Project-2-Game'} target="blank" variant="secondary" title='view on github' className="modalBtn bt3">GALAXY TRESPASSERS</Button>
+      <Button href={'https://github.com/KaasKop97/Project-2-Game'} target="blank" variant="secondary" title='view on github' className="modalBtn bt2">FULL GAME</Button>
+      <Button href={'https://github.com/KaasKop97/Project-2-Game'} target="blank" variant="secondary" title='view on github' className="modalBtn bt2">GALAXY TRESPASSERS</Button>
+    </Modal.Footer>
+  </Modal>
+
+  {/************* OBIA FETI *************/}  
+  <Modal> scrollable={true} size="lg" show={this.state.p5Show} onHide={p5Close} centered={true}>
+    <Modal.Header closeButton style={{background: t1}}>
+      <Modal.Title id="modalP6">
+        <Col xs={12} >
+          <h1 className="modalTitle">Obia Feti</h1>
+        </Col>
+      </Modal.Title>
+    </Modal.Header>
+    <Modal.Body>
+      <p>
+      <i>Obia feti</i>
+        <br/>
+      All layouts and designs have been made in Lunacy.
+    
+      </p>
+      <div>
+        <Carousel>
+          <Carousel.Item>
+            <Image fluid={true} src={sayos1}/>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image fluid={true} src={sayos2}/>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image fluid={true} src={sayos3}/>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image fluid={true} src={sayos4}/>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image fluid={true} src={sayos5}/>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image fluid={true} src={sayos6}/>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image fluid={true} src={sayos7}/>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image fluid={true} src={sayos8}/>
+          </Carousel.Item>
+          <Carousel.Item>
+            <Image fluid={true} src={sayos9}/>
+          </Carousel.Item>
+        </Carousel>
+      </div>
+    </Modal.Body>
+    <Modal.Footer>
+      <Button href={"https://github.com/joelscholtz/Bytme"} target="blank" className="modalBtn bt1">GITHUB</Button>
     </Modal.Footer>
   </Modal>
 </Container>
-
     );
   }
 }

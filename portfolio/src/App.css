@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Muli|Oxygen|Roboto|Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Poiret One&display=swap');
 :root{
   --sizenav: 18px;
+  --font: "Poiret One";
+  --subfont: "montserrat";
+  --weight: 
 }
 
 /* Globals */
 .btn-primary {
-  font-family: 'Montserrat';
+  font-family: var(--subfont);
   padding: 9px;
 }
 
@@ -136,20 +139,41 @@
   background: #ffffff4f;
   width: var(--sizenav);
   height: var(--sizenav);
-  top:13px;
+  top:11px;
   border-radius: 50%;
   border: 3px solid rgba(91, 91, 91, 0.13);
 }
 
 .navMenu a.active::before{
-  background: rgba(142, 187, 174, 0.459);
-  border-color: #8EBBAE;
+  background: rgba(248, 213, 57, 0.644);
+  border-color: rgb(241, 204, 37);
   top:13px;
 }
+
+.fade.show.tooltip.bs-tooltip-left{
+  font-size: 1.5em;
+ 
+
+}
+.fade.tooltip.bs-tooltip-left{
+  font-size: 1.5em;
+}
+
+.Navi{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: #5B5B5B;
+  color: white;
+}
+
+
 /**************** Pages *****************/
 .mainPage {
+  height: 100vh;
   background-color: #FFFF;
-  font-family: 'Montserrat';
+  font-family: var(--font);
   border-color: #F5D76E;
   object-fit: contain;
 }
@@ -157,16 +181,22 @@
 .projectsPage {
   min-height: 600px;
   background-color: rgb(255, 255, 255);
-  font-family: 'Montserrat';
+  font-family: var(--font);
 }
 
 .MePage {
   height: 100vh;
   object-fit: contain;
   background-color: #ffffff;
-  font-family: 'Montserrat';
+  font-family: var(--font);
 }
 
+.Footer {
+  background-color: whitesmoke;
+  opacity: .8;
+  text-align: center;
+  justify-content: space-evenly;
+}
 /************** Main ****************/
 .inner {
   object-fit: contain;
@@ -186,19 +216,19 @@
 
 .mainPageText {
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: var(--font);
   justify-content: center;
   left: 0;
   right: 0;
 }
 
 .mainPageTitle {
-  font-family: 'Montserrat';
-  font-size: calc( 10px + 3vw);
+  font-family: var(--font);
+  font-size: calc( 2.5em + 3vw);
 }
 
 .mainPageSubTitle {
-  font-family: 'Montserrat';
+  font-family: var(--subfont);
   font-size: calc( 10px + .7vw);
   height: calc( 10px + .3vw);
 }
@@ -210,6 +240,7 @@
 }
 
 .mainButtons {
+  font-family: var(--subfont);
   text-align: center;
   padding-top: 3em;
   padding-bottom: 2em;
@@ -247,9 +278,10 @@
 
 .projects-title {
   margin-top: 10vh;
-  font-size: calc( 14px + 2.2vw);
+  font-size: calc( 2em + 2.2vw);
   color: #5B5B5B;
-  font-family: 'Montserrat';
+  font-weight: bolder;
+  font-family: var(--font);
 }
 
 .head {
@@ -259,7 +291,7 @@
 
 .head>h1 {
   color: #333333;
-  font-family: 'Montserrat';
+  font-family: var(--font);
   font-size: calc( 25pt + 2.2vw);
 }
 
@@ -267,20 +299,24 @@
   text-align: center;
   background-color: #8EBBAE;
   color: white;
-  border-radius: 1EM;
+  border-radius: .3EM;
   margin-top: 8%;
 }
 
 .descInfo {
   text-align: center;
+  font-family: var(--subfont);
   display: block;
+  color: white;
   font-size: calc(8pt + .5vw);
 }
 
 .more {
   text-align: left;
+  font-family: var(--subfont);
   font-size: calc(12px + .5vw);
   color: #ffffff;
+  vertical-align: bottom;
 }
 
 .more>a {
@@ -288,7 +324,7 @@
 }
 
 .titleprj {
-  font-family: 'Montserrat';
+  font-family: var(--font);
   font-size: calc(20px + .5vw);
 }
 
@@ -316,30 +352,26 @@
 }
 
 .modalTitle{
-  font-family: 'Montserrat';
-  font-size: calc(20px + .5vw);
+  font-family: var(--font);
+  font-size: calc(20px + 2vw);
 }
 
 .modalBtn{
-  color: #F5D76E;
+  color: #B6D4CA;
   background: transparent;
   border: 0px;
   font-weight: bold;
 }
-.bt2{
-  color: #D8A0A3;
-}
 
-.bt3{
+.bt1{
   color: #B6D4CA;
 }
 
-.bt4{
-  color: #C7B69F;
+.bt2{
+  color: #ccdbd3;
 }
 
-.carousel-inner{
-}
+
 
 .carousel-control-next, .carousel-control-prev{
   filter: invert(100%);
@@ -361,7 +393,7 @@
 
 /********** About **********/
 .innerAbout {
-  font-family: 'Montserrat';
+  font-family: var(--subfont);
   justify-content: center;
   text-align: center;
   object-position: center;
@@ -391,7 +423,7 @@
 
 .aboutHead {
   font-size: calc( 33pt + 1.3vw);
-  font-family: 'Montserrat';
+  font-family: var(--font);
 }
 
 .aboutSub {
@@ -401,6 +433,8 @@
   text-align: left;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  line-height: 2em;
 }
 
 .logoBar {
@@ -453,13 +487,25 @@
 }
 
 .insider {
-  background-color: rgb(165, 204, 190);
-  font-family: 'Montserrat';
+  background-color: rgba(255, 255, 255, 0.61);
+  font-family: var(--subfont);
   justify-content: center;
   text-align: center;
-  color: white;
+  color: rgba(88, 88, 88, 0.664);
   top: 0;
   bottom: 0;
-  border-radius: 1em;
+  margin-top: 7vh;
+  border-radius: .3em;
 }
 
+/*******Footer******/
+.footoes{
+  
+  color: grey;
+  opacity: .2;
+  width: calc(15px + 1vw);
+  margin-top: calc(10px + 1vw);
+  margin-bottom: calc(10px + 1vw);
+  margin-left: calc(7em + 1vw);
+  margin-right: calc(7em + 1vw);
+}

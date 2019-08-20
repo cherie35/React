@@ -10,8 +10,8 @@ function Main() {
 
     
 
-<Container fluid={true} className="mainPage" style={{width: '100%', margin: 'auto'}} >
-  <Container fluid={true} style={{minHeight:"95vh"}} >
+<Container fluid={true} className="mainPage pb-5" style={{width: '100%', margin: 'auto'}} >
+  <Container fluid={true} >
     <Row >
       <Col lg={12} className="mainPageText align-middle">
         <h1 className={'mainPageTitle'}>Hello, I'm Chérie Cederboom</h1>
@@ -21,7 +21,7 @@ function Main() {
       </Col>
     </Row>
     <Row >
-      <Col md={12} className="offset-md-auto mainButtons">
+      <Col md={12} className="offset-md-auto mainButtons pb-5">
         <Fade top>
           <div className='btn-toolbar-center'>
             <div className='btn-group pt-4 mx-5'>
@@ -31,11 +31,9 @@ function Main() {
               </Button>
               </Link>
             </div>
-            <div className='btn-group pt-4 mx-5'>
-              <Link activeClass="active" to="MePage" spy={true} smooth='easeInOutQuint' duration={2000}>
-                <Button variant='secondary' title={"I look forward to hearing from you!"} className={"buttonSub px-4 py-2"} > get in touch
-            </Button>
-              </Link>
+            <div className='btn-group pt-4 mx-5'><Link activeClass="active" to="MePage" spy={true} smooth={true} duration= {1200}><Button variant='secondary' className={"buttonSub px-4 py-2"}>
+                 About</Button>
+            </Link>
             </div>
           </div>
         </Fade>
